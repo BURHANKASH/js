@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dat = 50;
+        function a(){
+            document.write("Global Varaible =");
+            document.writeln(dat);
+        }
+        function b() 
+        {
+            var data=100;
+            document.write("<br>");
+            document.write("Local Variable = ");
+            document.writeln(data);
+        }
+        a();
+        b();
+    </script>
+</body>
+</html>

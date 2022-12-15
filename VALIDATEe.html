@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h2{
+            text-align: center;
+    color: white;
+    padding-top: 30px;
+        }
+      form{
+    margin: 50px auto ;
+    width: 400px;
+    height: 500px;
+    background-color: black;
+      }
+      label{
+        
+    color: white;
+    margin: 35px 50px 25px 0px;
+    font-size: 20px;
+      }
+      #textone{
+        height: 30px;
+    width: 250px;
+    font-size: 25px;
+      }
+      #result{
+        background-color: red;
+    border: none;
+    color: white;
+    width: 170px;
+    padding: 5px 20px;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 30px 120px;
+      }
+      #spanResult{
+        color: yellow;
+    font-size: 35px;
+    text-align:center;
+    margin:100px 0px;
+      }
+    </style>
+<head>
+    <script>
+
+        function testVariable() {
+           
+            var strText = document.getElementById("textone").value*30.48;          
+            var result = strText 
+           if (result>0){
+            document.getElementById('spanResult').innerHTML = result;
+        }
+        else if(isNaN(result)){
+            alert("Please enter valid number!")
+        }
+        else{
+            alert("Please enter a feet value > 0")
+        }
+        }
+    </script>
+</head>
+<body> 
+    
+    <form id="form1">
+        <h2>Unit Converter</h2>
+        <label>feet</label>
+    <input type="text" id="textone" ><br><br>
+    <div class=".row">
+    <input type="button" onclick="testVariable()" value="Convert to cm" id="result">
+    <p id="spanResult">
+    </p>
+</form>
+    
+</body>
+</html>
